@@ -5,11 +5,41 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <ul>
+        <li><a href = "#Home">Home</a></li>
+        <li><a href = "#about">About us</a></li>
+        <li><a href = "#contact">Contact us</a></li>
+        <li><a href = "#jecrc">JECRC UNIVERSITY</a></li>
+    </ul>
     <script>
         let a = parseInt(prompt("enter ur value pf a  : "));
         let b = parseInt(prompt("enter ur value pf b  : "));
         let c = a + b;
-        document.write("the sum is : " + c)
+        document.write("the sum is : " + c);
+        document.getElementById("first").textContent = a;
+        document.getElementById("second").textContent = b;
+        document.getElementById("output").textContent = "Sum : " + (a+b);
+
     </script>
+    <table>
+        <thead>
+            <tr>
+                <td>
+                    <td>S.No</td>
+                    <td>1st Input</td>
+                    <td>Operation</td>
+                    <td>2nd Input</td>
+                    <td>final output</td>
+                </td>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td id = "first"></td>
+                <td>+</td>
+                <td id = "second"></td>
+            </tr>
+        </thead>
+    </table>
 </body>
 </html>
